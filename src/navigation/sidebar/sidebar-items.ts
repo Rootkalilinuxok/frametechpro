@@ -44,74 +44,76 @@ export interface NavGroup {
 export const sidebarItems: NavGroup[] = [
   {
     id: 1,
-    label: "Dashboards",
+    label: "Principale",
     items: [
       {
-        title: "Dashboards",
+        title: "Contabilità",
         url: "/dashboard",
         icon: Home,
         subItems: [
-          { title: "Default", url: "/dashboard/default", icon: ChartPie },
-          { title: "CRM", url: "/dashboard", icon: Grid2X2, comingSoon: true },
-          { title: "Analytics", url: "/dashboard/analytics", icon: ChartLine, comingSoon: true },
-          { title: "eCommerce", url: "/dashboard/e-commerce", icon: ShoppingBag, comingSoon: true },
-          { title: "Academy", url: "/dashboard/academy", icon: BookA, comingSoon: true },
-          { title: "Logistics", url: "/dashboard/logistics", icon: Forklift, comingSoon: true },
+          { title: "Andamento", url: "/dashboard", icon: ChartPie },
+          { title: "Costi", url: "/dashboard/costi", icon: Grid2X2 },
+          { title: "Costi Periodici", url: "/dashboard/costi-periodici", icon: ChartLine },
+          { title: "Profitti", url: "/dashboard/profitti", icon: ShoppingBag },
+          { title: "Archivio", url: "/dashboard/archivio", icon: BookA },
+          { title: "Fatture", url: "/dashboard/fatture", icon: Forklift },
+          { title: "Rapportini", url: "/dashboard/rapportini", icon: Forklift },
+          { title: "Scadenze", url: "/dashboard/scadenze", icon: Forklift },
         ],
       },
     ],
   },
   {
     id: 2,
-    label: "Pages",
+    label: "Servizi",
     items: [
       {
-        title: "Authentication",
+        title: "Autorizzati",
         url: "/auth",
         icon: Fingerprint,
         subItems: [
-          { title: "Login v1", url: "/auth/v1/login", newTab: true },
-          { title: "Register v1", url: "/auth/v1/register", newTab: true },
+          { title: "FrameTech SL", url: "/auth/v1/login", newTab: true },
+          { title: "JP La Villa", url: "/auth/v1/register", newTab: true },
         ],
       },
       {
-        title: "Email",
+        title: "JP La Villa",
         url: "/mail",
         icon: Mail,
         comingSoon: true,
       },
       {
-        title: "Chat",
+        title: "Documenti",
         url: "/chat",
         icon: MessageSquare,
         comingSoon: true,
       },
       {
-        title: "Calendar",
+        title: "Calendario",
         url: "/calendar",
         icon: Calendar,
         comingSoon: true,
       },
       {
-        title: "Kanban",
+        title: "Storico",
         url: "/kanban",
         icon: Kanban,
         comingSoon: true,
       },
       {
-        title: "Invoice",
+        title: "Note",
         url: "/invoice",
         icon: ReceiptText,
         comingSoon: true,
       },
       {
-        title: "Users",
+        title: "Galleria",
         url: "/users",
         icon: Users,
         comingSoon: true,
       },
       {
-        title: "Roles",
+        title: "Keraglass",
         url: "/roles",
         icon: Lock,
         comingSoon: true,
@@ -120,10 +122,10 @@ export const sidebarItems: NavGroup[] = [
   },
   {
     id: 3,
-    label: "Misc",
+    label: "Assistente",
     items: [
       {
-        title: "Others",
+        title: "BOT Keraglass",
         url: "/others",
         icon: SquareArrowUpRight,
         comingSoon: true,
