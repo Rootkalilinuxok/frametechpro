@@ -20,7 +20,17 @@ import { DataTableColumnHeader } from "../../../../../components/data-table/data
 
 import { TableCellViewer } from "./table-cell-viewer";
 
-export const dashboardColumns: ColumnDef<any>[] = [
+export interface DashboardRow {
+  id: number;
+  header: string;
+  type: string;
+  status: string;
+  target: string;
+  limit: string;
+  reviewer: string;
+}
+
+export const dashboardColumns: ColumnDef<DashboardRow>[] = [
   {
     id: "select",
     header: ({ table }) => (
